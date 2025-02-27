@@ -10,7 +10,7 @@ print(current_dir)
 
 
 # Load data from a CSV file dumped in the repo
-data = .\data\pd.read_csv('data.csv')
+data = pd.read_csv('../data/data.csv')
 print("Data loaded:")
 print(data.head())
 
