@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 print(__file__)
-current_dir = .Path(__file__)
+current_dir = Path(__file__)
 print(current_dir)
 
 
 # Load data from a CSV file dumped in the repo
-data = pd.read_csv('data.csv')
+data = .\data\pd.read_csv('data.csv')
 print("Data loaded:")
 print(data.head())
 
