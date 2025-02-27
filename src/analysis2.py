@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import compute_stats
+import scatter_plt
 from pathlib import Path
 
 print(__file__)
@@ -19,12 +20,7 @@ print(data.head())
 compute_stats.compute_stats(data)
 
 # Create a scatter plot without any function encapsulation
-plt.figure(figsize=(8, 6))
-plt.scatter(data['value1'], data['value2'], c='blue', alpha=0.5)
-plt.title('Scatter Plot of value1 vs. value2')
-plt.xlabel('value1')
-plt.ylabel('value2')
-plt.show()
+scatter_plt.scatter_plt(data)
 
 # Some extra messy code: looping and printing out repeated info
 for i in range(3):

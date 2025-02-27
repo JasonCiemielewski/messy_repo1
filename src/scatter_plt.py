@@ -1,6 +1,7 @@
 # Create a scatter plot without any function encapsulation
-
+#scatter_plt.py
 import numpy as np
+import matplotlib.pyplot as plt
 def scatter_plt(data):
     """
     Basic Scatter Plot
